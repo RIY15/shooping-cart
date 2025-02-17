@@ -34,7 +34,7 @@ const Header = ({ viewCart, setViewCart }: PropsType) => {
             <BottomNavigation
               showLabels
               value={value}
-              onChange={(event, newValue) => setValue(newValue)}
+              onChange={(_, newValue) => setValue(newValue)}
             >
               <BottomNavigationAction
                 label="Home"
