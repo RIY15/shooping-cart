@@ -1,5 +1,4 @@
 import Nav from "./Nav";
-import useCart from "../hooks/useCart";
 import { Link } from "react-router-dom";
 
 type PropsType = {
