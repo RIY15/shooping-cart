@@ -28,9 +28,16 @@ const Header = ({ viewCart, setViewCart }: PropsType) => {
   return (
     <header>
       <div className="flex justify-between p-4 bg-slate-300 items-center">
-        <h1 className="font-mono text-3xl font-extrabold">Acme Co.</h1>
+        <h1 className="font-mono lg:text-3xl sm:text-xl md:text-2xl font-extrabold">
+          Acme Co.
+        </h1>
         <div className="relative flex items-center gap-4">
-          <Box sx={{ width: 280, borderRadius: "20px" }}>
+          <Box
+            sx={{
+              width: { xs: "100%", lg: 280, sm: 80 },
+              borderRadius: "20px",
+            }}
+          >
             <BottomNavigation
               showLabels
               value={value}
