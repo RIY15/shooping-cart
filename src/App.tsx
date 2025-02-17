@@ -1,17 +1,14 @@
-import { useState } from 'react'
-import Box from '@mui/material/Box';
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/home";
+import OrderHistory from "./Pages/OrderHistory";
 
 function App() {
-  
-  
   return (
-    <>
-      <Box component="section" sx={{ p: 2, border: '1px dashed red' }}>
-      This Box renders as an HTML section element.
-    </Box>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/order-history" element={<OrderHistory />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
