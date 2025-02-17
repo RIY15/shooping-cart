@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
-import Home from "./Pages/home";
-
 import { CartProvider } from "./context/CardProvider";
 import { ProductsProvider } from "./context/ProductProviders";
 import { BrowserRouter } from "react-router-dom";

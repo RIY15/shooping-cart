@@ -12,7 +12,6 @@ const Cart = () => {
   const { dispatch, REDUCER_ACTIONS, totalItems, totalPrice, cart } = useCart();
   const navigate = useNavigate();
   const { addOrder, orders } = useOrderHistory();
-  const idItem: number = 0;
 
   const onSubmitOrder = () => {
     if (cart.length > 0) {
